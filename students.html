@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students — Brightfield Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="role-admin role-aware">
+
+<div class="app">
+  <aside class="app-sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">B</span><span class="brand-name">Brightfield</span></a>
+    <span class="side-role" data-side-role>ADMIN ACCESS</span>
+    <nav class="side-nav">
+      <a data-roles="admin" href="admin-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Dashboard</a>
+      <a data-roles="teacher" href="teacher-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Dashboard</a>
+
+      <a data-roles="admin" href="students.html?role=admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Students</a>
+      <a data-roles="teacher" href="students.html?role=teacher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>My Classes</a>
+
+      <a data-roles="admin" href="teachers.html?role=admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>Teachers</a>
+
+      <a data-roles="admin" href="attendance.html?role=admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Attendance</a>
+      <a data-roles="teacher" href="attendance.html?role=teacher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Attendance</a>
+
+      <a data-roles="admin" href="exams.html?role=admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>Exams &amp; Results</a>
+      <a data-roles="teacher" href="exams.html?role=teacher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>Gradebook</a>
+
+      <a data-roles="admin" href="fees.html?role=admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Fees</a>
+
+      <a data-roles="admin" href="announcements.html?role=admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>Announcements</a>
+      <a data-roles="teacher" href="announcements.html?role=teacher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>Announcements</a>
+    </nav>
+    <div class="side-user">
+      <span class="av" data-side-avatar>RO</span>
+      <div><span class="name" data-side-name>Rosa Odenu</span><br><span class="role">Brightfield Academy</span></div>
+      <a href="login.html" class="logout">Sign out</a>
+    </div>
+  </aside>
+
+  <main class="app-main">
+    <div class="app-topbar">
+      <div>
+        <span class="eyebrow">Directory</span>
+        <h1>Students</h1>
+        <p class="sub">1,240 students enrolled across 42 classes.</p>
+      </div>
+      <div class="topbar-actions">
+        <div class="role-switch">
+          <a href="students.html?role=admin" data-role="admin">ADMIN</a>
+          <a href="students.html?role=teacher" data-role="teacher">TEACHER</a>
+        </div>
+        <a href="#" class="btn btn-primary btn-sm" data-roles="admin">+ Enrol student</a>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search by name or ID…" data-search="studentsTable">
+      </div>
+      <div class="filters">
+        <select><option>All grades</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option></select>
+        <select><option>All status</option><option>Active</option><option>Pending docs</option><option>Inactive</option></select>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="table-wrap">
+        <table id="studentsTable">
+          <thead><tr><th>Student</th><th class="mono">ID</th><th>Grade</th><th>Guardian</th><th>Attendance</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="avatar-row"><span class="av" style="background:var(--admin);">TW</span><span class="who"><strong>Tomas Weiss</strong><span>Homeroom 9B</span></span></td><td class="mono">STU‑10432</td><td>Grade 9</td><td>Samuel Weiss</td><td>99%</td><td><span class="pill pill-good">Active</span></td></tr>
+            <tr><td class="avatar-row"><span class="av" style="background:var(--teacher);">LN</span><span class="who"><strong>Lindiwe Nkosi</strong><span>Homeroom 9B</span></span></td><td class="mono">STU‑10431</td><td>Grade 9</td><td>Thandiwe Nkosi</td><td>91%</td><td><span class="pill pill-good">Active</span></td></tr>
+            <tr><td class="avatar-row"><span class="av" style="background:var(--student);">PN</span><span class="who"><strong>Priya Nandakumar</strong><span>Homeroom 7A</span></span></td><td class="mono">STU‑10430</td><td>Grade 7</td><td>Rajesh Nandakumar</td><td>88%</td><td><span class="pill pill-warn">Pending docs</span></td></tr>
+            <tr><td class="avatar-row"><span class="av" style="background:var(--parent);">AF</span><span class="who"><strong>Anaya Fitzgerald</strong><span>Homeroom 9B</span></span></td><td class="mono">STU‑10118</td><td>Grade 9</td><td>Ngozi Fitzgerald</td><td>98%</td><td><span class="pill pill-good">Active</span></td></tr>
+            <tr><td class="avatar-row"><span class="av" style="background:var(--admin);">MO</span><span class="who"><strong>Marcus Oduya</strong><span>Homeroom 10C</span></span></td><td class="mono">STU‑09876</td><td>Grade 10</td><td>Grace Oduya</td><td>95%</td><td><span class="pill pill-good">Active</span></td></tr>
+            <tr><td class="avatar-row"><span class="av" style="background:var(--teacher);">SK</span><span class="who"><strong>Sofia Kaur</strong><span>Homeroom 8A</span></span></td><td class="mono">STU‑09652</td><td>Grade 8</td><td>Harpreet Kaur</td><td>76%</td><td><span class="pill pill-bad">Inactive</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

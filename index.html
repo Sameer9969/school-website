@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brightfield Academy — School Management System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">B</span>
+      <span class="brand-name">Brightfield Academy</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#roles">For your role</a>
+      <a href="announcements.html">Notices</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="login.html" class="btn btn-primary btn-sm">Sign in</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">School management system · Est. 1994</span>
+      <h1>Every roster, report card and reminder — in one place.</h1>
+      <p class="hero-lede">Brightfield Connect is the single system our admins, teachers, students and parents use to run the school day — from attendance at 8:05am to fee receipts at term's end.</p>
+      <div class="hero-cta">
+        <a href="login.html" class="btn btn-primary">Sign in to your dashboard</a>
+        <a href="#roles" class="btn btn-ghost">See what each role can do</a>
+      </div>
+      <div class="badge-strip">
+        <span class="mini-badge" style="background:var(--admin-t);color:var(--admin);"><i style="background:var(--admin);"></i>Admin</span>
+        <span class="mini-badge" style="background:var(--teacher-t);color:var(--teacher);"><i style="background:var(--teacher);"></i>Teacher</span>
+        <span class="mini-badge" style="background:var(--student-t);color:var(--student);"><i style="background:var(--student);"></i>Student</span>
+        <span class="mini-badge" style="background:var(--parent-t);color:var(--parent);"><i style="background:var(--parent);"></i>Parent</span>
+      </div>
+    </div>
+    <div class="roster-card">
+      <div class="roster-head">
+        <div>
+          <div class="eyebrow" style="color:var(--ink-soft);">Today · Term 2, Week 6</div>
+          <h3 style="margin:0;">Grade 9 — Homeroom B</h3>
+        </div>
+        <span class="pill pill-good">32/34 present</span>
+      </div>
+      <div class="roster-row"><span>Anaya Fitzgerald</span><span>ON TIME · 07:58</span></div>
+      <div class="roster-row"><span>Marcus Oduya</span><span>ON TIME · 08:01</span></div>
+      <div class="roster-row"><span>Priya Nandakumar</span><span class="mono" style="color:var(--warn);">LATE · 08:14</span></div>
+      <div class="roster-row"><span>Tomas Weiss</span><span>ON TIME · 07:55</span></div>
+      <div class="roster-row"><span>Lindiwe Nkosi</span><span class="mono" style="color:var(--bad);">ABSENT</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="roles">
+  <div class="section-head">
+    <span class="eyebrow">Four badges, one system</span>
+    <h2>Built around who's using it, not just what it stores.</h2>
+    <p>Each account opens straight into the view that role needs — nothing borrowed, nothing hidden behind extra clicks.</p>
+  </div>
+  <div class="role-grid">
+    <div class="role-card rc-admin">
+      <div>
+        <span class="role-code">01 · ADMIN</span>
+        <h3>Run the whole school</h3>
+        <p>Enrol students, manage staff, oversee fees and publish notices campus-wide.</p>
+      </div>
+    </div>
+    <div class="role-card rc-teacher">
+      <div>
+        <span class="role-code">02 · TEACHER</span>
+        <h3>Run the classroom</h3>
+        <p>Take attendance, enter grades, plan lessons and message parents directly.</p>
+      </div>
+    </div>
+    <div class="role-card rc-student">
+      <div>
+        <span class="role-code">03 · STUDENT</span>
+        <h3>Keep track of your day</h3>
+        <p>Timetable, homework, results and notices — all in your own dashboard.</p>
+      </div>
+    </div>
+    <div class="role-card rc-parent">
+      <div>
+        <span class="role-code">04 · PARENT</span>
+        <h3>Stay in the loop</h3>
+        <p>Attendance alerts, report cards, fee balances and teacher messages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="programs">
+  <div class="section-head">
+    <span class="eyebrow">What's inside</span>
+    <h2>Twelve pages, everything a term needs.</h2>
+  </div>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>Attendance register</h3>
+      <p>Daily roll call by class, with late and absence trends over the term.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Gradebook &amp; exams</h3>
+      <p>Record scores by subject, publish report cards, track class averages.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Fee management</h3>
+      <p>Invoices, part-payments and receipts, visible to admin and parents.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Notices &amp; announcements</h3>
+      <p>One board for the whole school, filterable by audience.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="stats-band">
+    <div><div class="num">1,240</div><div class="lbl">Students enrolled</div></div>
+    <div><div class="num">86</div><div class="lbl">Teaching staff</div></div>
+    <div><div class="num">96.4%</div><div class="lbl">Avg. attendance</div></div>
+    <div><div class="num">42</div><div class="lbl">Classes running</div></div>
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <span>© 2026 Brightfield Academy · 14 Meridian Road</span>
+    <span>admissions@brightfield.edu · (011) 555‑0148</span>
+  </div>
+</footer>
+
+</body>
+</html>

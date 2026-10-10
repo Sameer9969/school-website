@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — Brightfield Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="login-wrap">
+  <div class="login-card">
+    <div class="login-side">
+      <div>
+        <a href="index.html" class="brand"><span class="brand-mark">B</span><span class="brand-name">Brightfield</span></a>
+        <h2>One badge, one dashboard.</h2>
+        <p>Choose the role your account belongs to. Each one opens a different view — admin runs the school, teachers run the classroom, students and parents follow along.</p>
+      </div>
+      <div class="badge-strip">
+        <span class="mini-badge" style="background:rgba(255,255,255,.08);color:#fff;"><i style="background:var(--admin);"></i>Admin</span>
+        <span class="mini-badge" style="background:rgba(255,255,255,.08);color:#fff;"><i style="background:var(--teacher);"></i>Teacher</span>
+        <span class="mini-badge" style="background:rgba(255,255,255,.08);color:#fff;"><i style="background:var(--student);"></i>Student</span>
+        <span class="mini-badge" style="background:rgba(255,255,255,.08);color:#fff;"><i style="background:var(--parent);"></i>Parent</span>
+      </div>
+    </div>
+
+    <div class="login-main">
+      <span class="eyebrow">Sign in</span>
+      <h2 style="margin-top:.3em;">Welcome back</h2>
+      <p style="margin-bottom:1.4em;">Select your profile, then enter your details.</p>
+
+      <div class="role-picker">
+        <button type="button" class="role-tile active" data-role="admin" style="--tile-color:var(--admin);--tile-tint:var(--admin-t);">
+          <span class="dot" style="background:var(--admin);"></span>
+          <span><strong>Admin</strong><span>School office</span></span>
+        </button>
+        <button type="button" class="role-tile" data-role="teacher">
+          <span class="dot" style="background:var(--teacher);"></span>
+          <span><strong>Teacher</strong><span>Staff account</span></span>
+        </button>
+        <button type="button" class="role-tile" data-role="student">
+          <span class="dot" style="background:var(--student);"></span>
+          <span><strong>Student</strong><span>Learner account</span></span>
+        </button>
+        <button type="button" class="role-tile" data-role="parent">
+          <span class="dot" style="background:var(--parent);"></span>
+          <span><strong>Parent</strong><span>Guardian account</span></span>
+        </button>
+      </div>
+
+      <form onsubmit="return false;">
+        <div class="field">
+          <label for="id">Username or ID</label>
+          <input id="id" type="text" placeholder="e.g. admin.rowe or STU‑10432" />
+        </div>
+        <div class="field">
+          <label for="pw">Password</label>
+          <input id="pw" type="password" placeholder="••••••••" />
+        </div>
+        <button id="loginSubmit" class="btn btn-primary btn-block">Sign in as this role</button>
+      </form>
+
+      <div class="login-foot">
+        <a href="#">Forgot password?</a>
+        <a href="index.html">← Back to site</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
